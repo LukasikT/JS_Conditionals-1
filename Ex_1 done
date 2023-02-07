@@ -1,0 +1,27 @@
+let season = 'winter';
+let response;
+
+
+
+// Add your code here
+
+if (season === 'summer') {
+response = 'We have summer time - LET\'S PARTY!!!';
+}
+else if (season === 'winter') {
+response = 'We have winter time - let\'s have a snowball fight!!! :D';
+}
+
+else {
+response = 'Upsss... I don\'t know what season we have \:(';
+}
+
+// Don't edit the code below here!
+
+
+
+const section = document.querySelector('.preview');
+section.innerHTML = ' ';
+let para1 = document.createElement('p');
+para1.textContent = response;
+section.appendChild(para1);
